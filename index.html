@@ -4,65 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>The Night Drive Home</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
 
+    <main>
         <h1>The Night</h1>
-        <p class="subtitle">Drive Home</p>
+        <h2>Drive Home</h2>
 
-        <p class="description">
-            Dark outside. Streets are empty.
-            Just the street lights, rain and the drive home.
-        </p>
+        <p>Dark outside. Streets are empty.
+           Just the street lights, rain and the drive home.</p>
 
-        <div class="windshield">
-
-            <div class="moon"></div>
-
-            <div class="streetlight light1"></div>
-            <div class="streetlight light2"></div>
-
-            <div class="traffic-light">
-                <div id="red-light"></div>
-                <div id="yellow-light"></div>
-                <div id="green-light"></div>
-            </div>
-
-            <div class="road">
-                <div class="road-line"></div>
-            </div>
-
-            <div class="rain"></div>
+        <div class="scene">
+            <img id="road" src="images/nightroad.jpg"
+                 alt="An empty road at night">
+            <div id="rain"></div>
         </div>
 
-        <div class="dashboard">
-            <span id="clock">3:12 AM</span>
-            <span id="status">ENGINE OFF</span>
-        </div>
+        <p id="message">Press play to begin your drive.</p>
 
-        <div class="audio-section">
-            <h2>Listen to the Drive</h2>
-
-            <audio id="drive-audio" controls>
-                <source src="audio/drive.mp3" type="audio/mpeg">
-            </audio>
-
-            <p id="message">
-                Press play to begin the drive.
-            </p>
-        </div>
-
-        <button id="start-button">Start Driving</button>
+        <button id="play-button">Play Soundscape</button>
         <button id="rain-button">Turn Rain On</button>
 
-    </div>
+        <audio id="drive-audio">
+            <source src="audio/drive.wav" type="audio/wav">
+        </audio>
+    </main>
 
     <script src="script.js"></script>
+
 </body>
 </html>
